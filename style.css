@@ -1,0 +1,319 @@
+/* ================================
+   CÀI ĐẶT CHUNG
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f1f6fc;
+    color: #1f2937;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+
+/* ================================
+   KHUNG CHÍNH
+================================ */
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+/* ================================
+   PHẦN TIÊU ĐỀ
+================================ */
+
+.header {
+    background: linear-gradient(135deg, #1565c0, #1976d2);
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+    border-radius: 16px;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 20px rgba(21, 101, 192, 0.18);
+}
+
+.header h1 {
+    font-size: 30px;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+
+.header p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+/* ================================
+   FORM NHẬP DỮ LIỆU
+================================ */
+
+.form-section {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.07);
+}
+
+.form-section h2 {
+    color: #1565c0;
+    font-size: 22px;
+    margin-bottom: 22px;
+}
+
+.subject-title {
+    margin-top: 30px;
+}
+
+
+/* ================================
+   Ô NHẬP
+================================ */
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #374151;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.2s;
+    background: #ffffff;
+}
+
+.form-group input:focus {
+    border-color: #1976d2;
+    box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.12);
+}
+
+.form-group input::placeholder {
+    color: #9ca3af;
+}
+
+
+/* ================================
+   NÚT TÍNH KẾT QUẢ
+================================ */
+
+.calculate-button {
+    display: block;
+    width: 100%;
+    border: none;
+    background: #1565c0;
+    color: white;
+    padding: 14px 20px;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 25px;
+    transition: 0.2s;
+}
+
+.calculate-button:hover {
+    background: #0d47a1;
+    transform: translateY(-1px);
+}
+
+.calculate-button:active {
+    transform: translateY(0);
+}
+
+
+/* ================================
+   THÔNG BÁO LỖI
+================================ */
+
+.error-message {
+    display: none;
+    background: #fee2e2;
+    color: #b91c1c;
+    border: 1px solid #fecaca;
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin-top: 18px;
+    font-size: 15px;
+}
+
+
+/* ================================
+   KẾT QUẢ
+================================ */
+
+.result-section {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.07);
+}
+
+.result-section h2 {
+    color: #1565c0;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+
+/* ================================
+   TÊN SINH VIÊN
+================================ */
+
+.student-result {
+    background: #eff6ff;
+    border-left: 4px solid #1976d2;
+    padding: 14px 16px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+
+.student-result strong {
+    margin-right: 5px;
+}
+
+
+/* ================================
+   BẢNG KẾT QUẢ
+================================ */
+
+.result-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+}
+
+.result-table th {
+    background: #1565c0;
+    color: white;
+    padding: 13px 12px;
+    text-align: left;
+}
+
+.result-table td {
+    padding: 13px 12px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.result-table tbody tr:hover {
+    background: #f8fafc;
+}
+
+.result-table th:first-child,
+.result-table td:first-child {
+    width: 70px;
+    text-align: center;
+}
+
+.result-table th:last-child,
+.result-table td:last-child {
+    width: 120px;
+    text-align: center;
+}
+
+
+/* ================================
+   ĐIỂM TRUNG BÌNH
+================================ */
+
+.average-result {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.average-result span {
+    font-weight: 600;
+}
+
+.average-result strong {
+    font-size: 22px;
+    color: #15803d;
+}
+
+
+/* ================================
+   XẾP LOẠI
+================================ */
+
+.classification-result {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.classification-result span {
+    font-weight: 600;
+}
+
+.classification-result strong {
+    color: #1565c0;
+    font-size: 20px;
+}
+
+
+/* ================================
+   RESPONSIVE - ĐIỆN THOẠI
+================================ */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px 12px;
+    }
+
+    .header {
+        padding: 25px 15px;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .header p {
+        font-size: 17px;
+    }
+
+    .form-section,
+    .result-section {
+        padding: 20px;
+    }
+
+    .result-table {
+        font-size: 14px;
+    }
+
+    .result-table th,
+    .result-table td {
+        padding: 10px 7px;
+    }
+}
